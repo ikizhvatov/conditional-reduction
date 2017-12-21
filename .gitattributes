@@ -1,0 +1,6 @@
+*.tar.bz2 filter=lfs diff=lfs merge=lfs -text
+*.trs filter=lfs diff=lfs merge=lfs -text
+*.input filter=lfs diff=lfs merge=lfs -text
+*.output filter=lfs diff=lfs merge=lfs -text
+*.trace filter=lfs diff=lfs merge=lfs -text
+*.bin filter=lfs diff=lfs merge=lfs -text
