@@ -1,0 +1,26 @@
+[Traces]
+files=1
+trace_type=i
+transpose=true
+index=0
+nsamples=804248
+trace=../ches2016_aes128_sb_ciph_dec1a551f1eddec0de4b1dae5c0de511.trace NUMTRACES 804248
+
+[Guesses]
+files=1
+guess_type=u
+transpose=true
+guess=../ches2016_aes128_sb_ciph_dec1a551f1eddec0de4b1dae5c0de511.input NUMTRACES 16
+
+[General]
+threads=4
+order=1
+return_type=double
+algorithm=AES
+position=/opt/local/share/daredevil/LUT/AES_AFTER_MULTINV
+round=0
+bitnum=all
+bytenum=all
+correct_key=0xdec1a551f1eddec0de4b1dae5c0de511
+memory=6G
+top=10

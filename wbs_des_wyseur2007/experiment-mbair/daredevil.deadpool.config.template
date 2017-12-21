@@ -1,0 +1,28 @@
+
+[Traces]
+files=1
+trace_type=i
+transpose=true
+index=0
+nsamples=72080
+trace=../mem_addr1_rw1_200_72080.trace NUMTRACES 72080
+
+[Guesses]
+files=1
+guess_type=u
+transpose=true
+guess=../mem_addr1_rw1_200_72080.input NUMTRACES 8
+
+[General]
+threads=4
+order=1
+return_type=double
+algorithm=DES
+position=/opt/local/share/daredevil/LUT/DES_SBOX
+des_switch=DES_8_64
+round=0
+bytenum=all
+bitnum=all
+correct_key=0x30 32 34 32 34 36 32 36
+memory=6G
+top=10
