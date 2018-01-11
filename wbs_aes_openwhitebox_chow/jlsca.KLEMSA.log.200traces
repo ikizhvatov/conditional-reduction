@@ -1,0 +1,188 @@
+Opened /Users/ilya/whitebox/datasharing/wbs_aes_openwhitebox_chow/chow_aes128_sb_ciph_693bb79cd7742262c969595c4f8d895f.trs, #traces 200, #samples 16400 (UInt8), #data 32
+
+Jlsca running in Julia version: 0.6.2, 1 processes/1 workers/1 threads per worker
+
+DPA parameters
+attack:       AES Sbox
+mode:         CIPHER
+key length:   KL128
+direction:    FORWARD
+xor:          false
+analysis:     CPA
+leakages:     Klemsa(0x01),Klemsa(0x02),Klemsa(0x03),Klemsa(0x04),Klemsa(0x05),Klemsa(0x06),Klemsa(0x07),Klemsa(0x08),Klemsa(0x09),Klemsa(0x0a),Klemsa(0x0b),Klemsa(0x0c),Klemsa(0x0d),Klemsa(0x0e),Klemsa(0x0f),Klemsa(0x10),Klemsa(0x11),Klemsa(0x12),Klemsa(0x13),Klemsa(0x14),Klemsa(0x15),Klemsa(0x16),Klemsa(0x17),Klemsa(0x18),Klemsa(0x19),Klemsa(0x1a),Klemsa(0x1b),Klemsa(0x1c),Klemsa(0x1d),Klemsa(0x1e),Klemsa(0x1f),Klemsa(0x20),Klemsa(0x21),Klemsa(0x22),Klemsa(0x23),Klemsa(0x24),Klemsa(0x25),Klemsa(0x26),Klemsa(0x27),Klemsa(0x28),Klemsa(0x29),Klemsa(0x2a),Klemsa(0x2b),Klemsa(0x2c),Klemsa(0x2d),Klemsa(0x2e),Klemsa(0x2f),Klemsa(0x30),Klemsa(0x31),Klemsa(0x32),Klemsa(0x33),Klemsa(0x34),Klemsa(0x35),Klemsa(0x36),Klemsa(0x37),Klemsa(0x38),Klemsa(0x39),Klemsa(0x3a),Klemsa(0x3b),Klemsa(0x3c),Klemsa(0x3d),Klemsa(0x3e),Klemsa(0x3f),Klemsa(0x40),Klemsa(0x41),Klemsa(0x42),Klemsa(0x43),Klemsa(0x44),Klemsa(0x45),Klemsa(0x46),Klemsa(0x47),Klemsa(0x48),Klemsa(0x49),Klemsa(0x4a),Klemsa(0x4b),Klemsa(0x4c),Klemsa(0x4d),Klemsa(0x4e),Klemsa(0x4f),Klemsa(0x50),Klemsa(0x51),Klemsa(0x52),Klemsa(0x53),Klemsa(0x54),Klemsa(0x55),Klemsa(0x56),Klemsa(0x57),Klemsa(0x58),Klemsa(0x59),Klemsa(0x5a),Klemsa(0x5b),Klemsa(0x5c),Klemsa(0x5d),Klemsa(0x5e),Klemsa(0x5f),Klemsa(0x60),Klemsa(0x61),Klemsa(0x62),Klemsa(0x63),Klemsa(0x64),Klemsa(0x65),Klemsa(0x66),Klemsa(0x67),Klemsa(0x68),Klemsa(0x69),Klemsa(0x6a),Klemsa(0x6b),Klemsa(0x6c),Klemsa(0x6d),Klemsa(0x6e),Klemsa(0x6f),Klemsa(0x70),Klemsa(0x71),Klemsa(0x72),Klemsa(0x73),Klemsa(0x74),Klemsa(0x75),Klemsa(0x76),Klemsa(0x77),Klemsa(0x78),Klemsa(0x79),Klemsa(0x7a),Klemsa(0x7b),Klemsa(0x7c),Klemsa(0x7d),Klemsa(0x7e),Klemsa(0x7f),Klemsa(0x80),Klemsa(0x81),Klemsa(0x82),Klemsa(0x83),Klemsa(0x84),Klemsa(0x85),Klemsa(0x86),Klemsa(0x87),Klemsa(0x88),Klemsa(0x89),Klemsa(0x8a),Klemsa(0x8b),Klemsa(0x8c),Klemsa(0x8d),Klemsa(0x8e),Klemsa(0x8f),Klemsa(0x90),Klemsa(0x91),Klemsa(0x92),Klemsa(0x93),Klemsa(0x94),Klemsa(0x95),Klemsa(0x96),Klemsa(0x97),Klemsa(0x98),Klemsa(0x99),Klemsa(0x9a),Klemsa(0x9b),Klemsa(0x9c),Klemsa(0x9d),Klemsa(0x9e),Klemsa(0x9f),Klemsa(0xa0),Klemsa(0xa1),Klemsa(0xa2),Klemsa(0xa3),Klemsa(0xa4),Klemsa(0xa5),Klemsa(0xa6),Klemsa(0xa7),Klemsa(0xa8),Klemsa(0xa9),Klemsa(0xaa),Klemsa(0xab),Klemsa(0xac),Klemsa(0xad),Klemsa(0xae),Klemsa(0xaf),Klemsa(0xb0),Klemsa(0xb1),Klemsa(0xb2),Klemsa(0xb3),Klemsa(0xb4),Klemsa(0xb5),Klemsa(0xb6),Klemsa(0xb7),Klemsa(0xb8),Klemsa(0xb9),Klemsa(0xba),Klemsa(0xbb),Klemsa(0xbc),Klemsa(0xbd),Klemsa(0xbe),Klemsa(0xbf),Klemsa(0xc0),Klemsa(0xc1),Klemsa(0xc2),Klemsa(0xc3),Klemsa(0xc4),Klemsa(0xc5),Klemsa(0xc6),Klemsa(0xc7),Klemsa(0xc8),Klemsa(0xc9),Klemsa(0xca),Klemsa(0xcb),Klemsa(0xcc),Klemsa(0xcd),Klemsa(0xce),Klemsa(0xcf),Klemsa(0xd0),Klemsa(0xd1),Klemsa(0xd2),Klemsa(0xd3),Klemsa(0xd4),Klemsa(0xd5),Klemsa(0xd6),Klemsa(0xd7),Klemsa(0xd8),Klemsa(0xd9),Klemsa(0xda),Klemsa(0xdb),Klemsa(0xdc),Klemsa(0xdd),Klemsa(0xde),Klemsa(0xdf),Klemsa(0xe0),Klemsa(0xe1),Klemsa(0xe2),Klemsa(0xe3),Klemsa(0xe4),Klemsa(0xe5),Klemsa(0xe6),Klemsa(0xe7),Klemsa(0xe8),Klemsa(0xe9),Klemsa(0xea),Klemsa(0xeb),Klemsa(0xec),Klemsa(0xed),Klemsa(0xee),Klemsa(0xef),Klemsa(0xf0),Klemsa(0xf1),Klemsa(0xf2),Klemsa(0xf3),Klemsa(0xf4),Klemsa(0xf5),Klemsa(0xf6),Klemsa(0xf7),Klemsa(0xf8),Klemsa(0xf9),Klemsa(0xfa),Klemsa(0xfb),Klemsa(0xfc),Klemsa(0xfd),Klemsa(0xfe),Klemsa(0xff)
+maximization: abs global max
+combination:  +
+data at:      1
+targets:      [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+known key:    693bb79cd7742262c969595c4f8d895f
+
+phase: 1 / 1, #targets 16
+
+Running processor "Cond reduce" on trace range 1:1:200, 1 data passes, 1 sample passes
+Processing traces 1:200..  66%|█████████████████        |  ETA: 0:00:01[KProcessing traces 1:200.. 100%|█████████████████████████| Time: 0:00:02[K
+Reduction for 1: 16258 left after global dup col removal, 16257 left after removing the inv dup cols, 41 left after sample reduction
+Reduction for 2: 16258 left after global dup col removal, 16257 left after removing the inv dup cols, 41 left after sample reduction
+Reduction for 3: 16258 left after global dup col removal, 16257 left after removing the inv dup cols, 41 left after sample reduction
+Reduction for 4: 16258 left after global dup col removal, 16257 left after removing the inv dup cols, 41 left after sample reduction
+Reduction for 5: 16258 left after global dup col removal, 16257 left after removing the inv dup cols, 41 left after sample reduction
+Reduction for 6: 16258 left after global dup col removal, 16257 left after removing the inv dup cols, 41 left after sample reduction
+Reduction for 7: 16258 left after global dup col removal, 16257 left after removing the inv dup cols, 41 left after sample reduction
+Reduction for 8: 16258 left after global dup col removal, 16257 left after removing the inv dup cols, 41 left after sample reduction
+Reduction for 9: 16258 left after global dup col removal, 16257 left after removing the inv dup cols, 41 left after sample reduction
+Reduction for 10: 16258 left after global dup col removal, 16257 left after removing the inv dup cols, 41 left after sample reduction
+Reduction for 11: 16258 left after global dup col removal, 16257 left after removing the inv dup cols, 41 left after sample reduction
+Reduction for 12: 16258 left after global dup col removal, 16257 left after removing the inv dup cols, 41 left after sample reduction
+Reduction for 13: 16258 left after global dup col removal, 16257 left after removing the inv dup cols, 41 left after sample reduction
+Reduction for 14: 16258 left after global dup col removal, 16257 left after removing the inv dup cols, 41 left after sample reduction
+Reduction for 15: 16258 left after global dup col removal, 16257 left after removing the inv dup cols, 41 left after sample reduction
+Reduction for 16: 16258 left after global dup col removal, 16257 left after removing the inv dup cols, 41 left after sample reduction
+
+Reduced 200 input traces, UInt8 data type
+CPA on samples shape (146, 41) (range 1:41) and data shape (146,)
+Results @ 146 rows, 41 cols (200 rows, 131200 cols, consumed)
+target: 1, phase: 1, "Sbox out"
+rank:   1, correct  : 0x69, + of peaks: 66.611575
+rank:   2, candidate: 0x29, + of peaks: 52.154698
+rank:   3, candidate: 0x2c, + of peaks: 52.048497
+rank:   4, candidate: 0xd1, + of peaks: 52.018276
+rank:   5, candidate: 0x91, + of peaks: 51.923276
+recovered key material: 69
+CPA on samples shape (145, 41) (range 1:41) and data shape (145,)
+Results @ 145 rows, 41 cols (200 rows, 131200 cols, consumed)
+target: 2, phase: 1, "Sbox out"
+rank:   1, correct  : 0x3b, + of peaks: 65.874684
+rank:   2, candidate: 0xcd, + of peaks: 52.160179
+rank:   3, candidate: 0xb1, + of peaks: 52.136215
+rank:   4, candidate: 0xdc, + of peaks: 52.114563
+rank:   5, candidate: 0xba, + of peaks: 52.091470
+recovered key material: 3b
+CPA on samples shape (138, 41) (range 1:41) and data shape (138,)
+Results @ 138 rows, 41 cols (200 rows, 131200 cols, consumed)
+target: 3, phase: 1, "Sbox out"
+rank:   1, correct  : 0xb7, + of peaks: 67.045431
+rank:   2, candidate: 0x4d, + of peaks: 53.810464
+rank:   3, candidate: 0x0d, + of peaks: 53.650199
+rank:   4, candidate: 0x90, + of peaks: 53.635152
+rank:   5, candidate: 0xc5, + of peaks: 53.458313
+recovered key material: b7
+CPA on samples shape (143, 41) (range 1:41) and data shape (143,)
+Results @ 143 rows, 41 cols (200 rows, 131200 cols, consumed)
+target: 4, phase: 1, "Sbox out"
+rank:   1, correct  : 0x9c, + of peaks: 64.669084
+rank:   2, candidate: 0x6f, + of peaks: 52.639821
+rank:   3, candidate: 0xac, + of peaks: 52.565968
+rank:   4, candidate: 0x93, + of peaks: 52.500351
+rank:   5, candidate: 0x19, + of peaks: 52.467493
+recovered key material: 9c
+CPA on samples shape (150, 41) (range 1:41) and data shape (150,)
+Results @ 150 rows, 41 cols (200 rows, 131200 cols, consumed)
+target: 5, phase: 1, "Sbox out"
+rank:   1, correct  : 0xd7, + of peaks: 65.015190
+rank:   2, candidate: 0x90, + of peaks: 51.768302
+rank:   3, candidate: 0x2a, + of peaks: 51.396459
+rank:   4, candidate: 0x12, + of peaks: 51.367242
+rank:   5, candidate: 0xac, + of peaks: 51.344691
+recovered key material: d7
+CPA on samples shape (135, 41) (range 1:41) and data shape (135,)
+Results @ 135 rows, 41 cols (200 rows, 131200 cols, consumed)
+target: 6, phase: 1, "Sbox out"
+rank:   1, correct  : 0x74, + of peaks: 66.063043
+rank:   2, candidate: 0x95, + of peaks: 54.398613
+rank:   3, candidate: 0x5e, + of peaks: 54.220400
+rank:   4, candidate: 0xd9, + of peaks: 54.167026
+rank:   5, candidate: 0xc6, + of peaks: 54.090741
+recovered key material: 74
+CPA on samples shape (142, 41) (range 1:41) and data shape (142,)
+Results @ 142 rows, 41 cols (200 rows, 131200 cols, consumed)
+target: 7, phase: 1, "Sbox out"
+rank:   1, correct  : 0x22, + of peaks: 64.725595
+rank:   2, candidate: 0x28, + of peaks: 52.921269
+rank:   3, candidate: 0x0b, + of peaks: 52.690698
+rank:   4, candidate: 0x40, + of peaks: 52.678147
+rank:   5, candidate: 0x49, + of peaks: 52.652317
+recovered key material: 22
+CPA on samples shape (140, 41) (range 1:41) and data shape (140,)
+Results @ 140 rows, 41 cols (200 rows, 131200 cols, consumed)
+target: 8, phase: 1, "Sbox out"
+rank:   1, correct  : 0x62, + of peaks: 66.334974
+rank:   2, candidate: 0x2b, + of peaks: 53.145812
+rank:   3, candidate: 0x1e, + of peaks: 53.050811
+rank:   4, candidate: 0x28, + of peaks: 52.940292
+rank:   5, candidate: 0x8b, + of peaks: 52.932058
+recovered key material: 62
+CPA on samples shape (138, 41) (range 1:41) and data shape (138,)
+Results @ 138 rows, 41 cols (200 rows, 131200 cols, consumed)
+target: 9, phase: 1, "Sbox out"
+rank:   1, correct  : 0xc9, + of peaks: 64.448278
+rank:   2, candidate: 0xf6, + of peaks: 53.668422
+rank:   3, candidate: 0xef, + of peaks: 53.614115
+rank:   4, candidate: 0x93, + of peaks: 53.362876
+rank:   5, candidate: 0xc5, + of peaks: 53.241426
+recovered key material: c9
+CPA on samples shape (134, 41) (range 1:41) and data shape (134,)
+Results @ 134 rows, 41 cols (200 rows, 131200 cols, consumed)
+target: 10, phase: 1, "Sbox out"
+rank:   1, correct  : 0x69, + of peaks: 66.515866
+rank:   2, candidate: 0xbc, + of peaks: 54.241795
+rank:   3, candidate: 0x19, + of peaks: 54.192255
+rank:   4, candidate: 0x2b, + of peaks: 54.189337
+rank:   5, candidate: 0x2f, + of peaks: 54.178682
+recovered key material: 69
+CPA on samples shape (141, 41) (range 1:41) and data shape (141,)
+Results @ 141 rows, 41 cols (200 rows, 131200 cols, consumed)
+target: 11, phase: 1, "Sbox out"
+rank:   1, correct  : 0x59, + of peaks: 65.057136
+rank:   2, candidate: 0x42, + of peaks: 53.053882
+rank:   3, candidate: 0x12, + of peaks: 52.817634
+rank:   4, candidate: 0x47, + of peaks: 52.814303
+rank:   5, candidate: 0xf1, + of peaks: 52.781186
+recovered key material: 59
+CPA on samples shape (147, 41) (range 1:41) and data shape (147,)
+Results @ 147 rows, 41 cols (200 rows, 131200 cols, consumed)
+target: 12, phase: 1, "Sbox out"
+rank:   1, correct  : 0x5c, + of peaks: 66.205945
+rank:   2, candidate: 0x71, + of peaks: 51.993687
+rank:   3, candidate: 0xc5, + of peaks: 51.877420
+rank:   4, candidate: 0x4e, + of peaks: 51.730013
+rank:   5, candidate: 0x85, + of peaks: 51.691491
+recovered key material: 5c
+CPA on samples shape (144, 41) (range 1:41) and data shape (144,)
+Results @ 144 rows, 41 cols (200 rows, 131200 cols, consumed)
+target: 13, phase: 1, "Sbox out"
+rank:   1, correct  : 0x4f, + of peaks: 65.347255
+rank:   2, candidate: 0x35, + of peaks: 52.466511
+rank:   3, candidate: 0x3c, + of peaks: 52.367649
+rank:   4, candidate: 0xf4, + of peaks: 52.367241
+rank:   5, candidate: 0x7b, + of peaks: 52.360891
+recovered key material: 4f
+CPA on samples shape (146, 41) (range 1:41) and data shape (146,)
+Results @ 146 rows, 41 cols (200 rows, 131200 cols, consumed)
+target: 14, phase: 1, "Sbox out"
+rank:   1, correct  : 0x8d, + of peaks: 65.773267
+rank:   2, candidate: 0xb3, + of peaks: 52.360233
+rank:   3, candidate: 0xd9, + of peaks: 52.352706
+rank:   4, candidate: 0x6f, + of peaks: 52.340197
+rank:   5, candidate: 0x56, + of peaks: 52.127477
+recovered key material: 8d
+CPA on samples shape (139, 41) (range 1:41) and data shape (139,)
+Results @ 139 rows, 41 cols (200 rows, 131200 cols, consumed)
+target: 15, phase: 1, "Sbox out"
+rank:   1, correct  : 0x89, + of peaks: 67.044989
+rank:   2, candidate: 0x55, + of peaks: 53.435892
+rank:   3, candidate: 0x6b, + of peaks: 53.434183
+rank:   4, candidate: 0x24, + of peaks: 53.389613
+rank:   5, candidate: 0x79, + of peaks: 53.383359
+recovered key material: 89
+CPA on samples shape (143, 41) (range 1:41) and data shape (143,)
+Results @ 143 rows, 41 cols (200 rows, 131200 cols, consumed)
+target: 16, phase: 1, "Sbox out"
+rank:   1, correct  : 0x5f, + of peaks: 65.511140
+rank:   2, candidate: 0xcd, + of peaks: 53.046622
+rank:   3, candidate: 0xee, + of peaks: 52.535208
+rank:   4, candidate: 0x05, + of peaks: 52.424816
+rank:   5, candidate: 0xc0, + of peaks: 52.284183
+recovered key material: 5f
+recovered key: 693bb79cd7742262c969595c4f8d895f
+knownkey match: true
+ 22.790434 seconds (13.73 M allocations: 2.544 GiB, 5.50% gc time)
+       25.65 real        27.18 user         1.01 sys
