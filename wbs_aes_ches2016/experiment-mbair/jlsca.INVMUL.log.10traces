@@ -1,0 +1,188 @@
+Warning: bithack enabled: ignoring trailing 3 samples that are not 8 byte aligned !!!1
+Opened /Users/ilya/whitebox/datasharing/wbs_aes_ches2016/ches2016_aes128_sb_ciph_dec1a551f1eddec0de4b1dae5c0de511.trs, #traces 200, #samples 100531 (UInt8), #data 32
+
+Jlsca running in Julia version: 0.6.2, 1 processes/1 workers/1 threads per worker
+
+DPA parameters
+attack:       AES Sbox
+mode:         CIPHER
+key length:   KL128
+direction:    FORWARD
+xor:          false
+analysis:     CPA
+leakages:     bit0,bit1,bit2,bit3,bit4,bit5,bit6,bit7
+maximization: abs global max
+combination:  +
+data at:      1
+targets:      [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+known key:    dec1a551f1eddec0de4b1dae5c0de511
+
+phase: 1 / 1, #targets 16
+
+Running processor "Cond reduce" on trace range 1:1:10, 1 data passes, 1 sample passes
+Reduction for 1: 1024 left after global dup col removal, 512 left after removing the inv dup cols, 512 left after sample reduction
+Reduction for 2: 1024 left after global dup col removal, 512 left after removing the inv dup cols, 512 left after sample reduction
+Reduction for 3: 1024 left after global dup col removal, 512 left after removing the inv dup cols, 512 left after sample reduction
+Reduction for 4: 1024 left after global dup col removal, 512 left after removing the inv dup cols, 512 left after sample reduction
+Reduction for 5: 1024 left after global dup col removal, 512 left after removing the inv dup cols, 512 left after sample reduction
+Reduction for 6: 1024 left after global dup col removal, 512 left after removing the inv dup cols, 512 left after sample reduction
+Reduction for 7: 1024 left after global dup col removal, 512 left after removing the inv dup cols, 512 left after sample reduction
+Reduction for 8: 1024 left after global dup col removal, 512 left after removing the inv dup cols, 512 left after sample reduction
+Reduction for 9: 1024 left after global dup col removal, 512 left after removing the inv dup cols, 512 left after sample reduction
+Reduction for 10: 1024 left after global dup col removal, 512 left after removing the inv dup cols, 512 left after sample reduction
+Reduction for 11: 1024 left after global dup col removal, 512 left after removing the inv dup cols, 512 left after sample reduction
+Reduction for 12: 1024 left after global dup col removal, 512 left after removing the inv dup cols, 512 left after sample reduction
+Reduction for 13: 1024 left after global dup col removal, 512 left after removing the inv dup cols, 512 left after sample reduction
+Reduction for 14: 1024 left after global dup col removal, 512 left after removing the inv dup cols, 512 left after sample reduction
+Reduction for 15: 1024 left after global dup col removal, 512 left after removing the inv dup cols, 512 left after sample reduction
+Reduction for 16: 1024 left after global dup col removal, 512 left after removing the inv dup cols, 512 left after sample reduction
+
+Reduced 10 input traces, UInt8 data type
+CPA on samples shape (10, 512) (range 1:512) and data shape (10,)
+Results @ 10 rows, 512 cols (10 rows, 804224 cols, consumed)
+target: 1, phase: 1, "Sbox out"
+rank:   1, candidate: 0x00, + of peaks: 8.000000
+rank:   2, candidate: 0x01, + of peaks: 8.000000
+rank:   3, candidate: 0x06, + of peaks: 8.000000
+rank:   4, candidate: 0x08, + of peaks: 8.000000
+rank:  97, correct  : 0xde, + of peaks: 8.000000
+recovered key material: 00
+CPA on samples shape (10, 512) (range 1:512) and data shape (10,)
+Results @ 10 rows, 512 cols (10 rows, 804224 cols, consumed)
+target: 2, phase: 1, "Sbox out"
+rank:   1, candidate: 0x00, + of peaks: 8.000000
+rank:   2, candidate: 0x01, + of peaks: 8.000000
+rank:   3, candidate: 0x04, + of peaks: 8.000000
+rank:   4, candidate: 0x05, + of peaks: 8.000000
+rank:  71, correct  : 0xc1, + of peaks: 8.000000
+recovered key material: 00
+CPA on samples shape (10, 512) (range 1:512) and data shape (10,)
+Results @ 10 rows, 512 cols (10 rows, 804224 cols, consumed)
+target: 3, phase: 1, "Sbox out"
+rank:   1, candidate: 0x01, + of peaks: 8.000000
+rank:   2, candidate: 0x04, + of peaks: 8.000000
+rank:   3, candidate: 0x05, + of peaks: 8.000000
+rank:   4, candidate: 0x09, + of peaks: 8.000000
+rank: 192, correct  : 0xa5, + of peaks: 8.000000
+recovered key material: 01
+CPA on samples shape (10, 512) (range 1:512) and data shape (10,)
+Results @ 10 rows, 512 cols (10 rows, 804224 cols, consumed)
+target: 4, phase: 1, "Sbox out"
+rank:   1, candidate: 0x02, + of peaks: 8.000000
+rank:   2, candidate: 0x03, + of peaks: 8.000000
+rank:   3, candidate: 0x05, + of peaks: 8.000000
+rank:   4, candidate: 0x06, + of peaks: 8.000000
+rank:  38, correct  : 0x51, + of peaks: 8.000000
+recovered key material: 02
+CPA on samples shape (10, 512) (range 1:512) and data shape (10,)
+Results @ 10 rows, 512 cols (10 rows, 804224 cols, consumed)
+target: 5, phase: 1, "Sbox out"
+rank:   1, candidate: 0x03, + of peaks: 8.000000
+rank:   2, candidate: 0x04, + of peaks: 8.000000
+rank:   3, candidate: 0x0b, + of peaks: 8.000000
+rank:   4, candidate: 0x0f, + of peaks: 8.000000
+rank: 226, correct  : 0xf1, + of peaks: 8.000000
+recovered key material: 03
+CPA on samples shape (10, 512) (range 1:512) and data shape (10,)
+Results @ 10 rows, 512 cols (10 rows, 804224 cols, consumed)
+target: 6, phase: 1, "Sbox out"
+rank:   1, candidate: 0x04, + of peaks: 8.000000
+rank:   2, candidate: 0x06, + of peaks: 8.000000
+rank:   3, candidate: 0x08, + of peaks: 8.000000
+rank:   4, candidate: 0x0a, + of peaks: 8.000000
+rank: 228, correct  : 0xed, + of peaks: 8.000000
+recovered key material: 04
+CPA on samples shape (10, 512) (range 1:512) and data shape (10,)
+Results @ 10 rows, 512 cols (10 rows, 804224 cols, consumed)
+target: 7, phase: 1, "Sbox out"
+rank:   1, candidate: 0x00, + of peaks: 8.000000
+rank:   2, candidate: 0x01, + of peaks: 8.000000
+rank:   3, candidate: 0x03, + of peaks: 8.000000
+rank:   4, candidate: 0x04, + of peaks: 8.000000
+rank: 229, correct  : 0xde, + of peaks: 8.000000
+recovered key material: 00
+CPA on samples shape (10, 512) (range 1:512) and data shape (10,)
+Results @ 10 rows, 512 cols (10 rows, 804224 cols, consumed)
+target: 8, phase: 1, "Sbox out"
+rank:   1, candidate: 0x04, + of peaks: 8.000000
+rank:   2, candidate: 0x09, + of peaks: 8.000000
+rank:   3, candidate: 0x0a, + of peaks: 8.000000
+rank:   4, candidate: 0x0b, + of peaks: 8.000000
+rank: 204, correct  : 0xc0, + of peaks: 8.000000
+recovered key material: 04
+CPA on samples shape (10, 512) (range 1:512) and data shape (10,)
+Results @ 10 rows, 512 cols (10 rows, 804224 cols, consumed)
+target: 9, phase: 1, "Sbox out"
+rank:   1, candidate: 0x00, + of peaks: 8.000000
+rank:   2, candidate: 0x03, + of peaks: 8.000000
+rank:   3, candidate: 0x0a, + of peaks: 8.000000
+rank:   4, candidate: 0x0b, + of peaks: 8.000000
+rank:  87, correct  : 0xde, + of peaks: 8.000000
+recovered key material: 00
+CPA on samples shape (10, 512) (range 1:512) and data shape (10,)
+Results @ 10 rows, 512 cols (10 rows, 804224 cols, consumed)
+target: 10, phase: 1, "Sbox out"
+rank:   1, candidate: 0x00, + of peaks: 8.000000
+rank:   2, candidate: 0x01, + of peaks: 8.000000
+rank:   3, candidate: 0x02, + of peaks: 8.000000
+rank:   4, candidate: 0x05, + of peaks: 8.000000
+rank:  32, correct  : 0x4b, + of peaks: 8.000000
+recovered key material: 00
+CPA on samples shape (10, 512) (range 1:512) and data shape (10,)
+Results @ 10 rows, 512 cols (10 rows, 804224 cols, consumed)
+target: 11, phase: 1, "Sbox out"
+rank:   1, candidate: 0x02, + of peaks: 8.000000
+rank:   2, candidate: 0x04, + of peaks: 8.000000
+rank:   3, candidate: 0x05, + of peaks: 8.000000
+rank:   4, candidate: 0x0c, + of peaks: 8.000000
+rank: 116, correct  : 0x1d, + of peaks: 8.000000
+recovered key material: 02
+CPA on samples shape (10, 512) (range 1:512) and data shape (10,)
+Results @ 10 rows, 512 cols (10 rows, 804224 cols, consumed)
+target: 12, phase: 1, "Sbox out"
+rank:   1, candidate: 0x00, + of peaks: 8.000000
+rank:   2, candidate: 0x07, + of peaks: 8.000000
+rank:   3, candidate: 0x08, + of peaks: 8.000000
+rank:   4, candidate: 0x0b, + of peaks: 8.000000
+rank:  67, correct  : 0xae, + of peaks: 8.000000
+recovered key material: 00
+CPA on samples shape (10, 512) (range 1:512) and data shape (10,)
+Results @ 10 rows, 512 cols (10 rows, 804224 cols, consumed)
+target: 13, phase: 1, "Sbox out"
+rank:   1, candidate: 0x00, + of peaks: 8.000000
+rank:   2, candidate: 0x02, + of peaks: 8.000000
+rank:   3, candidate: 0x07, + of peaks: 8.000000
+rank:   4, candidate: 0x0b, + of peaks: 8.000000
+rank: 150, correct  : 0x5c, + of peaks: 8.000000
+recovered key material: 00
+CPA on samples shape (10, 512) (range 1:512) and data shape (10,)
+Results @ 10 rows, 512 cols (10 rows, 804224 cols, consumed)
+target: 14, phase: 1, "Sbox out"
+rank:   1, candidate: 0x02, + of peaks: 8.000000
+rank:   2, candidate: 0x06, + of peaks: 8.000000
+rank:   3, candidate: 0x0b, + of peaks: 8.000000
+rank:   4, candidate: 0x0c, + of peaks: 8.000000
+rank: 116, correct  : 0x0d, + of peaks: 8.000000
+recovered key material: 02
+CPA on samples shape (10, 512) (range 1:512) and data shape (10,)
+Results @ 10 rows, 512 cols (10 rows, 804224 cols, consumed)
+target: 15, phase: 1, "Sbox out"
+rank:   1, candidate: 0x01, + of peaks: 8.000000
+rank:   2, candidate: 0x02, + of peaks: 8.000000
+rank:   3, candidate: 0x05, + of peaks: 8.000000
+rank:   4, candidate: 0x07, + of peaks: 8.000000
+rank:  84, correct  : 0xe5, + of peaks: 8.000000
+recovered key material: 01
+CPA on samples shape (10, 512) (range 1:512) and data shape (10,)
+Results @ 10 rows, 512 cols (10 rows, 804224 cols, consumed)
+target: 16, phase: 1, "Sbox out"
+rank:   1, candidate: 0x00, + of peaks: 8.000000
+rank:   2, candidate: 0x02, + of peaks: 8.000000
+rank:   3, candidate: 0x04, + of peaks: 8.000000
+rank:   4, candidate: 0x07, + of peaks: 8.000000
+rank:   6, correct  : 0x11, + of peaks: 8.000000
+recovered key material: 00
+recovered key: 00000102030400040000020000020100
+knownkey match: false
+ 14.554415 seconds (9.99 M allocations: 800.897 MiB, 1.77% gc time)
+       18.06 real        17.85 user         0.48 sys
