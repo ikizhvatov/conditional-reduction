@@ -1,0 +1,27 @@
+[Traces]
+files=1
+trace_type=i
+transpose=true
+index=0
+nsamples=2548744
+trace=../wyseur2007_des_enc_3032343234363236.trace 40 2548744
+
+[Guesses]
+files=1
+guess_type=u
+transpose=true
+guess=../wyseur2007_des_enc_3032343234363236.input 40 8
+
+[General]
+threads=4
+order=1
+return_type=double
+algorithm=DES
+position=/opt/local/share/daredevil/LUT/DES_SBOX
+des_switch=DES_8_64
+round=0
+bytenum=all
+bitnum=all
+correct_key=0x30 32 34 32 34 36 32 36
+memory=6G
+top=10

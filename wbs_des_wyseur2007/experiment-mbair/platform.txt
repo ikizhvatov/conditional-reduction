@@ -1,0 +1,5 @@
+Darwin elbrus.local 17.3.0 Darwin Kernel Version 17.3.0: Thu Nov  9 18:09:22 PST 2017; root:xnu-4570.31.3~1/RELEASE_X86_64 x86_64
+machdep.cpu.brand_string: Intel(R) Core(TM) i7-5650U CPU @ 2.20GHz
+hw.physicalcpu: 2
+hw.memsize: 8589934592
+hw.usermem: 966778880

@@ -1,0 +1,344 @@
+
+[CONFIGURATION]
+
+  [GENERAL]
+	Number of threads:	 4
+	Index first sample:	 0
+	Number of samples:	 2548744
+	Total number traces:	 80
+	Target number traces:	 80
+	Total number keys:	 64
+	Attack order:		 1
+	Return Type:		 d
+	Window size:		 0
+	Algorithm:		 DES
+	Round:			 0
+	Bytenum:		 all
+	Target all bits individually.
+	Secret Key:		 0x30 32 34 32 34 36 32 36 
+	Round Key:		 0x14 02 32 2c 31 20 0f 07 
+	Lookup table layout:	 [8x64]
+	Memory:			 6.00GB
+	Keep track of:		 10
+	Separator :		 STANDARD
+
+  [TRACES]
+	Traces files:		 1
+	Traces type:		 i
+	Transpose traces:	 True
+	Total number samples:	 2548744
+	Traces:
+	1. ../wyseur2007_des_enc_3032343234363236.trace	 [80x2548744]
+
+  [GUESSES]
+	Guesses files:		 1
+	Guesses type:		 u
+	Transpose guesses:	 True
+	Total columns guesses:	 8
+	Guesses:
+		1. ../wyseur2007_des_enc_3032343234363236.input	 [80x8]
+
+[/CONFIGURATION]
+
+[INFO] Lookup table specified at /opt/local/share/daredevil/LUT/DES_SBOX
+
+[ATTACK] Computing 1-order correlations...
+[ATTACK] Key byte number 0
+
+[ATTACK] Target bit number 0
+
+[ATTACK] Target bit number 1
+
+[ATTACK] Target bit number 2
+
+[ATTACK] Target bit number 3
+
+Best 10 candidates for key byte #0 according to sum(abs(bit_correlations)):
+ 1: 0x14  sum: 4         <==
+ 2: 0x30  sum: 2.1853  
+ 3: 0x09  sum: 2.15315 
+ 4: 0x2a  sum: 2.09596 
+ 5: 0x04  sum: 2.05036 
+ 6: 0x18  sum: 2.03101 
+ 7: 0x21  sum: 2.01726 
+ 8: 0x36  sum: 1.99912 
+ 9: 0x17  sum: 1.97799 
+10: 0x3c  sum: 1.96741 
+
+Best 10 candidates for key byte #0 according to highest abs(bit_correlations):
+ 1: 0x14  peak: 1         <==
+ 2: 0x30  peak: 0.774672
+ 3: 0x09  peak: 0.646465
+ 4: 0x21  peak: 0.596975
+ 5: 0x34  peak: 0.594675
+ 6: 0x37  peak: 0.57931 
+ 7: 0x3c  peak: 0.569803
+ 8: 0x18  peak: 0.56185 
+ 9: 0x2a  peak: 0.553607
+10: 0x17  peak: 0.552771
+
+[INFO] Attack of byte number 0 done in 48.464352 seconds.
+Best bit: 0 rank: 0.               1    0x14  177049
+
+[ATTACK] Key byte number 1
+
+[ATTACK] Target bit number 0
+
+[ATTACK] Target bit number 1
+
+[ATTACK] Target bit number 2
+
+[ATTACK] Target bit number 3
+
+Best 10 candidates for key byte #1 according to sum(abs(bit_correlations)):
+ 1: 0x02  sum: 3.64366   <==
+ 2: 0x22  sum: 2.19609 
+ 3: 0x2f  sum: 2.17618 
+ 4: 0x00  sum: 2.06403 
+ 5: 0x0e  sum: 2.04229 
+ 6: 0x20  sum: 2.02315 
+ 7: 0x1d  sum: 2.00415 
+ 8: 0x3d  sum: 1.99171 
+ 9: 0x3e  sum: 1.98376 
+10: 0x13  sum: 1.95402 
+
+Best 10 candidates for key byte #1 according to highest abs(bit_correlations):
+ 1: 0x02  peak: 1         <==
+ 2: 0x22  peak: 0.849906
+ 3: 0x2f  peak: 0.708905
+ 4: 0x1d  peak: 0.651032
+ 5: 0x20  peak: 0.649781
+ 6: 0x3d  peak: 0.625195
+ 7: 0x1a  peak: 0.603764
+ 8: 0x00  peak: 0.601001
+ 9: 0x13  peak: 0.598029
+10: 0x0e  peak: 0.597757
+
+[INFO] Attack of byte number 1 done in 47.880818 seconds.
+Best bit: 0 rank: 0.              -1    0x02  138136
+
+[ATTACK] Key byte number 2
+
+[ATTACK] Target bit number 0
+
+[ATTACK] Target bit number 1
+
+[ATTACK] Target bit number 2
+
+[ATTACK] Target bit number 3
+
+Best 10 candidates for key byte #2 according to sum(abs(bit_correlations)):
+ 1: 0x32  sum: 3.49195   <==
+ 2: 0x12  sum: 2.25101 
+ 3: 0x30  sum: 2.17561 
+ 4: 0x11  sum: 2.12121 
+ 5: 0x36  sum: 2.11251 
+ 6: 0x31  sum: 2.0763  
+ 7: 0x16  sum: 2.03971 
+ 8: 0x15  sum: 2.01647 
+ 9: 0x33  sum: 2.01348 
+10: 0x3d  sum: 2.00246 
+
+Best 10 candidates for key byte #2 according to highest abs(bit_correlations):
+ 1: 0x32  peak: 1         <==
+ 2: 0x12  peak: 0.745383
+ 3: 0x11  peak: 0.730731
+ 4: 0x36  peak: 0.712871
+ 5: 0x30  peak: 0.695238
+ 6: 0x31  peak: 0.620452
+ 7: 0x15  peak: 0.608083
+ 8: 0x16  peak: 0.608083
+ 9: 0x08  peak: 0.591564
+10: 0x33  peak: 0.587596
+
+[INFO] Attack of byte number 2 done in 47.763504 seconds.
+Best bit: 1 rank: 0.               1    0x32  177825
+
+[ATTACK] Key byte number 3
+
+[ATTACK] Target bit number 0
+
+[ATTACK] Target bit number 1
+
+[ATTACK] Target bit number 2
+
+[ATTACK] Target bit number 3
+
+Best 10 candidates for key byte #3 according to sum(abs(bit_correlations)):
+ 1: 0x03  sum: 4       
+ 2: 0x2c  sum: 4         <==
+ 3: 0x33  sum: 2.02023 
+ 4: 0x1c  sum: 2.02023 
+ 5: 0x27  sum: 2.00749 
+ 6: 0x08  sum: 2.00749 
+ 7: 0x35  sum: 1.98781 
+ 8: 0x1a  sum: 1.98781 
+ 9: 0x15  sum: 1.95436 
+10: 0x3a  sum: 1.95436 
+
+Best 10 candidates for key byte #3 according to highest abs(bit_correlations):
+ 1: 0x03  peak: 1       
+ 2: 0x2c  peak: 1         <==
+ 3: 0x35  peak: 0.5915  
+ 4: 0x1a  peak: 0.5915  
+ 5: 0x19  peak: 0.570325
+ 6: 0x36  peak: 0.570325
+ 7: 0x33  peak: 0.556314
+ 8: 0x1c  peak: 0.556314
+ 9: 0x3e  peak: 0.539642
+10: 0x11  peak: 0.539642
+
+[INFO] Attack of byte number 3 done in 47.587919 seconds.
+Best bit: 0 rank: 0.               1    0x2c   86756
+
+[ATTACK] Key byte number 4
+
+[ATTACK] Target bit number 0
+
+[ATTACK] Target bit number 1
+
+[ATTACK] Target bit number 2
+
+[ATTACK] Target bit number 3
+
+Best 10 candidates for key byte #4 according to sum(abs(bit_correlations)):
+ 1: 0x31  sum: 4         <==
+ 2: 0x34  sum: 2.07972 
+ 3: 0x12  sum: 2.00583 
+ 4: 0x0b  sum: 1.99119 
+ 5: 0x1b  sum: 1.97942 
+ 6: 0x17  sum: 1.97734 
+ 7: 0x2f  sum: 1.97491 
+ 8: 0x0c  sum: 1.97169 
+ 9: 0x21  sum: 1.9697  
+10: 0x0f  sum: 1.96606 
+
+Best 10 candidates for key byte #4 according to highest abs(bit_correlations):
+ 1: 0x31  peak: 1         <==
+ 2: 0x34  peak: 0.649781
+ 3: 0x0b  peak: 0.625832
+ 4: 0x2f  peak: 0.598746
+ 5: 0x21  peak: 0.577152
+ 6: 0x23  peak: 0.575564
+ 7: 0x0c  peak: 0.571812
+ 8: 0x2b  peak: 0.558875
+ 9: 0x0f  peak: 0.551371
+10: 0x1b  peak: 0.545455
+
+[INFO] Attack of byte number 4 done in 47.549142 seconds.
+Best bit: 0 rank: 0.               1    0x31   87552
+
+[ATTACK] Key byte number 5
+
+[ATTACK] Target bit number 0
+
+[ATTACK] Target bit number 1
+
+[ATTACK] Target bit number 2
+
+[ATTACK] Target bit number 3
+
+Best 10 candidates for key byte #5 according to sum(abs(bit_correlations)):
+ 1: 0x20  sum: 3.43591   <==
+ 2: 0x07  sum: 2.02759 
+ 3: 0x1b  sum: 2.00799 
+ 4: 0x2c  sum: 2.00448 
+ 5: 0x21  sum: 2.00328 
+ 6: 0x28  sum: 1.94618 
+ 7: 0x2d  sum: 1.93961 
+ 8: 0x04  sum: 1.93632 
+ 9: 0x3e  sum: 1.92648 
+10: 0x0b  sum: 1.92216 
+
+Best 10 candidates for key byte #5 according to highest abs(bit_correlations):
+ 1: 0x20  peak: 1         <==
+ 2: 0x04  peak: 0.59975 
+ 3: 0x07  peak: 0.594675
+ 4: 0x2c  peak: 0.594675
+ 5: 0x1b  peak: 0.590793
+ 6: 0x3e  peak: 0.569091
+ 7: 0x12  peak: 0.553607
+ 8: 0x13  peak: 0.552771
+ 9: 0x05  peak: 0.549845
+10: 0x0b  peak: 0.543848
+
+[INFO] Attack of byte number 5 done in 48.225683 seconds.
+Best bit: 0 rank: 0.               1    0x20  139920
+
+[ATTACK] Key byte number 6
+
+[ATTACK] Target bit number 0
+
+[ATTACK] Target bit number 1
+
+[ATTACK] Target bit number 2
+
+[ATTACK] Target bit number 3
+
+Best 10 candidates for key byte #6 according to sum(abs(bit_correlations)):
+ 1: 0x0f  sum: 4         <==
+ 2: 0x0e  sum: 2.2471  
+ 3: 0x0d  sum: 2.19648 
+ 4: 0x2f  sum: 2.18605 
+ 5: 0x3c  sum: 2.11467 
+ 6: 0x3a  sum: 2.08301 
+ 7: 0x09  sum: 2.06239 
+ 8: 0x1a  sum: 2.05398 
+ 9: 0x08  sum: 2.03583 
+10: 0x03  sum: 1.99839 
+
+Best 10 candidates for key byte #6 according to highest abs(bit_correlations):
+ 1: 0x0f  peak: 1         <==
+ 2: 0x0e  peak: 0.794871
+ 3: 0x0d  peak: 0.777863
+ 4: 0x2f  peak: 0.770951
+ 5: 0x3a  peak: 0.725227
+ 6: 0x01  peak: 0.672758
+ 7: 0x2e  peak: 0.641944
+ 8: 0x08  peak: 0.64147 
+ 9: 0x2a  peak: 0.640026
+10: 0x24  peak: 0.628556
+
+[INFO] Attack of byte number 6 done in 47.833619 seconds.
+Best bit: 0 rank: 0.               1    0x0f  101603
+
+[ATTACK] Key byte number 7
+
+[ATTACK] Target bit number 0
+
+[ATTACK] Target bit number 1
+
+[ATTACK] Target bit number 2
+
+[ATTACK] Target bit number 3
+
+Best 10 candidates for key byte #7 according to sum(abs(bit_correlations)):
+ 1: 0x07  sum: 3.50376   <==
+ 2: 0x27  sum: 2.23116 
+ 3: 0x06  sum: 2.01778 
+ 4: 0x1e  sum: 1.97872 
+ 5: 0x00  sum: 1.96134 
+ 6: 0x2c  sum: 1.94951 
+ 7: 0x0d  sum: 1.94857 
+ 8: 0x05  sum: 1.93508 
+ 9: 0x24  sum: 1.93494 
+10: 0x18  sum: 1.93325 
+
+Best 10 candidates for key byte #7 according to highest abs(bit_correlations):
+ 1: 0x07  peak: 1         <==
+ 2: 0x06  peak: 0.68152 
+ 3: 0x27  peak: 0.625832
+ 4: 0x2c  peak: 0.600751
+ 5: 0x1e  peak: 0.594675
+ 6: 0x26  peak: 0.548432
+ 7: 0x18  peak: 0.546438
+ 8: 0x00  peak: 0.533229
+ 9: 0x24  peak: 0.528251
+10: 0x0a  peak: 0.52457 
+
+[INFO] Attack of byte number 7 done in 47.624168 seconds.
+Best bit: 0 rank: 0.               1    0x07  140930
+
+[INFO] Total attack of file /opt/local/share/daredevil/LUT/DES_SBOX done in 383.315961 seconds.
+
+      383.32 real      1176.84 user        91.56 sys

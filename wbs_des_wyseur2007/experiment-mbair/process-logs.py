@@ -133,10 +133,10 @@ if __name__ == '__main__':
     ranksJlsca = np.array(ranksJlsca)
 
     # debug printout
-    print(traceRange)
-    print(ranksJlsca)
-    print(timesJlsca)
-    print(samplesJlsca)
+    #print(traceRange)
+    #print(ranksJlsca)
+    #print(timesJlsca)
+    #print(samplesJlsca)
 
     #############
     # The plotting
@@ -164,7 +164,7 @@ if __name__ == '__main__':
     # plot zoomed time
     axTimeZoom.plot(traceRange, timesJlsca, color='tab:orange')
     axTimeZoom.plot(traceRange, timesDaredevilDeadpool, color='tab:green')
-    axTimeZoom.set_ylim([0, 30])
+    axTimeZoom.set_ylim([0, 60])
     axTimeZoom.set_xlim([0, 200])
     axTimeZoom.set_ylabel('Runtime, s')
     axTimeZoom.grid(b=True, which='both', color='0.75')

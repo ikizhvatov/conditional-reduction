@@ -1,0 +1,195 @@
+Warning: bithack enabled: ignoring trailing 1 samples that are not 8 byte aligned !!!1
+Opened /Users/ilya/whitebox/datasharing/wbs_des_wyseur2007/wyseur2007_des_enc_3032343234363236.trs, #traces 200, #samples 318593 (UInt8), #data 16
+
+Jlsca running in Julia version: 0.6.2, 1 processes/1 workers/1 threads per worker
+
+DPA parameters
+attack:       DES Sbox
+mode:         DES ENC
+direction:    BACKWARD
+xor:          false
+analysis:     CPA
+leakages:     bit0,bit1,bit2,bit3
+maximization: abs global max
+combination:  +
+data at:      9
+known key:    3032343234363236
+
+phase: 1 / 2, #targets 8
+
+Running processor "Cond reduce" on trace range 1:1:70, 2 data passes, 1 sample passes
+Processing traces 1:70..  19%|█████                     |  ETA: 0:00:05[KProcessing traces 1:70..  66%|█████████████████         |  ETA: 0:00:01[KProcessing traces 1:70..  94%|█████████████████████████ |  ETA: 0:00:00[KProcessing traces 1:70.. 100%|██████████████████████████| Time: 0:00:04[K
+Reduction for 1: 24595 left after global dup col removal, 20383 left after removing the inv dup cols, 43 left after sample reduction
+Reduction for 2: 24598 left after global dup col removal, 20385 left after removing the inv dup cols, 47 left after sample reduction
+Reduction for 3: 24603 left after global dup col removal, 20387 left after removing the inv dup cols, 45 left after sample reduction
+Reduction for 4: 24622 left after global dup col removal, 20401 left after removing the inv dup cols, 31 left after sample reduction
+Reduction for 5: 24611 left after global dup col removal, 20397 left after removing the inv dup cols, 39 left after sample reduction
+Reduction for 6: 24617 left after global dup col removal, 20402 left after removing the inv dup cols, 23 left after sample reduction
+Reduction for 7: 24605 left after global dup col removal, 20389 left after removing the inv dup cols, 22 left after sample reduction
+Reduction for 8: 24598 left after global dup col removal, 20384 left after removing the inv dup cols, 21 left after sample reduction
+
+Reduced 70 input traces, UInt8 data type
+CPA on samples shape (44, 43) (range 1:43) and data shape (44,)
+Results @ 44 rows, 43 cols (70 rows, 2548736 cols, consumed)
+target: 1, phase: 1, "Sbox 1 out"
+rank:   1, correct  : 0x14, + of peaks: 3.273861
+rank:   2, candidate: 0x37, + of peaks: 1.722839
+rank:   3, candidate: 0x33, + of peaks: 1.559016
+rank:   4, candidate: 0x17, + of peaks: 1.554789
+rank:   5, candidate: 0x04, + of peaks: 1.530451
+recovered key material: 14
+CPA on samples shape (43, 47) (range 1:47) and data shape (43,)
+Results @ 43 rows, 47 cols (70 rows, 2548736 cols, consumed)
+target: 2, phase: 1, "Sbox 2 out"
+rank:   1, correct  : 0x12, + of peaks: 4.000000
+rank:   2, candidate: 0x1e, + of peaks: 1.950944
+rank:   3, candidate: 0x32, + of peaks: 1.854965
+rank:   4, candidate: 0x10, + of peaks: 1.822882
+rank:   5, candidate: 0x16, + of peaks: 1.801252
+recovered key material: 12
+CPA on samples shape (45, 45) (range 1:45) and data shape (45,)
+Results @ 45 rows, 45 cols (70 rows, 2548736 cols, consumed)
+target: 3, phase: 1, "Sbox 3 out"
+rank:   1, correct  : 0x32, + of peaks: 3.419763
+rank:   2, candidate: 0x12, + of peaks: 1.840544
+rank:   3, candidate: 0x3d, + of peaks: 1.751654
+rank:   4, candidate: 0x30, + of peaks: 1.715297
+rank:   5, candidate: 0x1c, + of peaks: 1.686572
+recovered key material: 32
+CPA on samples shape (46, 31) (range 1:31) and data shape (46,)
+Results @ 46 rows, 31 cols (70 rows, 2548736 cols, consumed)
+target: 4, phase: 1, "Sbox 4 out"
+rank:   1, correct  : 0x0c, + of peaks: 4.000000
+rank:   2, candidate: 0x23, + of peaks: 4.000000
+rank:   3, candidate: 0x11, + of peaks: 1.833034
+rank:   4, candidate: 0x3e, + of peaks: 1.833034
+rank:   5, candidate: 0x17, + of peaks: 1.606795
+recovered key material: 0c
+CPA on samples shape (45, 39) (range 1:39) and data shape (45,)
+Results @ 45 rows, 39 cols (70 rows, 2548736 cols, consumed)
+target: 5, phase: 1, "Sbox 5 out"
+rank:   1, correct  : 0x0d, + of peaks: 4.000000
+rank:   2, candidate: 0x3e, + of peaks: 1.791094
+rank:   3, candidate: 0x0c, + of peaks: 1.685937
+rank:   4, candidate: 0x1d, + of peaks: 1.625827
+rank:   5, candidate: 0x08, + of peaks: 1.602833
+recovered key material: 0d
+CPA on samples shape (45, 23) (range 1:23) and data shape (45,)
+Results @ 45 rows, 23 cols (70 rows, 2548736 cols, consumed)
+target: 6, phase: 1, "Sbox 6 out"
+rank:   1, correct  : 0x32, + of peaks: 3.201981
+rank:   2, candidate: 0x16, + of peaks: 1.974024
+rank:   3, candidate: 0x3e, + of peaks: 1.660729
+rank:   4, candidate: 0x3a, + of peaks: 1.607071
+rank:   5, candidate: 0x1e, + of peaks: 1.564854
+recovered key material: 32
+CPA on samples shape (44, 22) (range 1:22) and data shape (44,)
+Results @ 44 rows, 22 cols (70 rows, 2548736 cols, consumed)
+target: 7, phase: 1, "Sbox 7 out"
+rank:   1, correct  : 0x0d, + of peaks: 4.000000
+rank:   2, candidate: 0x0f, + of peaks: 2.251946
+rank:   3, candidate: 0x2d, + of peaks: 2.013580
+rank:   4, candidate: 0x38, + of peaks: 1.816668
+rank:   5, candidate: 0x17, + of peaks: 1.727835
+recovered key material: 0d
+CPA on samples shape (43, 21) (range 1:21) and data shape (43,)
+Results @ 43 rows, 21 cols (70 rows, 2548736 cols, consumed)
+target: 8, phase: 1, "Sbox 8 out"
+rank:   1, correct  : 0x12, + of peaks: 3.198715
+rank:   2, candidate: 0x32, + of peaks: 2.413260
+rank:   3, candidate: 0x39, + of peaks: 1.730146
+rank:   4, candidate: 0x13, + of peaks: 1.716424
+rank:   5, candidate: 0x38, + of peaks: 1.645090
+recovered key material: 12
+
+phase: 2 / 2, #targets 8
+phase input: 1412320c0d320d12
+
+Running processor "Cond reduce" on trace range 1:1:70, 2 data passes, 1 sample passes
+Processing traces 1:70..  50%|█████████████             |  ETA: 0:00:01[KProcessing traces 1:70..  81%|█████████████████████     |  ETA: 0:00:01[KProcessing traces 1:70..  99%|██████████████████████████|  ETA: 0:00:00[KProcessing traces 1:70.. 100%|██████████████████████████| Time: 0:00:03[K
+Reduction for 1: 24596 left after global dup col removal, 20378 left after removing the inv dup cols, 42 left after sample reduction
+Reduction for 2: 24577 left after global dup col removal, 20359 left after removing the inv dup cols, 45 left after sample reduction
+Reduction for 3: 24576 left after global dup col removal, 20355 left after removing the inv dup cols, 44 left after sample reduction
+Reduction for 4: 24600 left after global dup col removal, 20388 left after removing the inv dup cols, 37 left after sample reduction
+Reduction for 5: 24598 left after global dup col removal, 20385 left after removing the inv dup cols, 49 left after sample reduction
+Reduction for 6: 24568 left after global dup col removal, 20352 left after removing the inv dup cols, 35 left after sample reduction
+Reduction for 7: 24560 left after global dup col removal, 20349 left after removing the inv dup cols, 37 left after sample reduction
+Reduction for 8: 24619 left after global dup col removal, 20396 left after removing the inv dup cols, 43 left after sample reduction
+
+Reduced 70 input traces, UInt8 data type
+CPA on samples shape (43, 42) (range 1:42) and data shape (43,)
+Results @ 43 rows, 42 cols (70 rows, 2548736 cols, consumed)
+target: 1, phase: 2, "Sbox 1 out"
+rank:   1, correct  : 0x06, + of peaks: 4.000000
+rank:   2, candidate: 0x33, + of peaks: 1.818421
+rank:   3, candidate: 0x16, + of peaks: 1.663970
+rank:   4, candidate: 0x22, + of peaks: 1.648686
+rank:   5, candidate: 0x0b, + of peaks: 1.645341
+recovered key material: 06
+CPA on samples shape (39, 45) (range 1:45) and data shape (39,)
+Results @ 39 rows, 45 cols (70 rows, 2548736 cols, consumed)
+target: 2, phase: 2, "Sbox 2 out"
+rank:   1, correct  : 0x12, + of peaks: 4.000000
+rank:   2, candidate: 0x32, + of peaks: 1.842893
+rank:   3, candidate: 0x2b, + of peaks: 1.815230
+rank:   4, candidate: 0x1e, + of peaks: 1.786724
+rank:   5, candidate: 0x27, + of peaks: 1.757746
+recovered key material: 12
+CPA on samples shape (41, 44) (range 1:44) and data shape (41,)
+Results @ 41 rows, 44 cols (70 rows, 2548736 cols, consumed)
+target: 3, phase: 2, "Sbox 3 out"
+rank:   1, correct  : 0x32, + of peaks: 3.221958
+rank:   2, candidate: 0x12, + of peaks: 1.821371
+rank:   3, candidate: 0x14, + of peaks: 1.712905
+rank:   4, candidate: 0x36, + of peaks: 1.679937
+rank:   5, candidate: 0x30, + of peaks: 1.631995
+recovered key material: 32
+CPA on samples shape (43, 37) (range 1:37) and data shape (43,)
+Results @ 43 rows, 37 cols (70 rows, 2548736 cols, consumed)
+target: 4, phase: 2, "Sbox 4 out"
+rank:   1, correct  : 0x0c, + of peaks: 4.000000
+rank:   2, candidate: 0x23, + of peaks: 4.000000
+rank:   3, candidate: 0x0b, + of peaks: 1.775168
+rank:   4, candidate: 0x24, + of peaks: 1.775168
+rank:   5, candidate: 0x1c, + of peaks: 1.764661
+recovered key material: 0c
+CPA on samples shape (43, 49) (range 1:49) and data shape (43,)
+Results @ 43 rows, 49 cols (70 rows, 2548736 cols, consumed)
+target: 5, phase: 2, "Sbox 5 out"
+rank:   1, correct  : 0x29, + of peaks: 4.000000
+rank:   2, candidate: 0x2c, + of peaks: 2.039951
+rank:   3, candidate: 0x33, + of peaks: 1.691547
+rank:   4, candidate: 0x28, + of peaks: 1.684021
+rank:   5, candidate: 0x17, + of peaks: 1.629833
+recovered key material: 29
+CPA on samples shape (40, 35) (range 1:35) and data shape (40,)
+Results @ 40 rows, 35 cols (70 rows, 2548736 cols, consumed)
+target: 6, phase: 2, "Sbox 6 out"
+rank:   1, correct  : 0x30, + of peaks: 3.262781
+rank:   2, candidate: 0x29, + of peaks: 1.658125
+rank:   3, candidate: 0x20, + of peaks: 1.644167
+rank:   4, candidate: 0x1c, + of peaks: 1.624247
+rank:   5, candidate: 0x0d, + of peaks: 1.605014
+recovered key material: 30
+CPA on samples shape (38, 37) (range 1:37) and data shape (38,)
+Results @ 38 rows, 37 cols (70 rows, 2548736 cols, consumed)
+target: 7, phase: 2, "Sbox 7 out"
+rank:   1, correct  : 0x06, + of peaks: 4.000000
+rank:   2, candidate: 0x28, + of peaks: 1.932188
+rank:   3, candidate: 0x03, + of peaks: 1.852858
+rank:   4, candidate: 0x26, + of peaks: 1.828797
+rank:   5, candidate: 0x09, + of peaks: 1.814891
+recovered key material: 06
+CPA on samples shape (44, 43) (range 1:43) and data shape (44,)
+Results @ 44 rows, 43 cols (70 rows, 2548736 cols, consumed)
+target: 8, phase: 2, "Sbox 8 out"
+rank:   1, correct  : 0x07, + of peaks: 3.283089
+rank:   2, candidate: 0x27, + of peaks: 1.975442
+rank:   3, candidate: 0x18, + of peaks: 1.724073
+rank:   4, candidate: 0x06, + of peaks: 1.661097
+rank:   5, candidate: 0x10, + of peaks: 1.485834
+recovered key material: 07
+recovered key: 3032343234363236
+knownkey match: true
+ 28.136029 seconds (11.93 M allocations: 904.108 MiB, 1.71% gc time)
+       30.81 real        31.03 user         0.36 sys
