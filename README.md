@@ -36,9 +36,9 @@ First, convert traces to the Daredevil split binary format:
 
     wbs_aes_ches2016 $ ./convert-traceset.sh
 
-Subfolder `experiment-mbair` contains scripts and logs from our experiments on a MacBook air. You can copy this folder to separate logs for your machine.
+Subfolder `experiment-mbair` contains scripts and logs from our experiments on a MacBook Air. You can copy this folder to separate logs for your machine.
 
-Go to the experimental subfolder and execute the following scripts to obtain result with Daredevil and Jlsca respectively.
+Go to the experimental subfolder and execute the following scripts to obtain results with Daredevil and Jlsca respectively.
 
     experiment-mbair$ ./daredevil-evolution-invmul.sh
     experiment-mbair$ ../runme.jlsca.evo.invmul.sh
