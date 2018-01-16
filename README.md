@@ -4,8 +4,8 @@ This repository contains experimental data and scripts to reproduce experiments 
 
 ## Setting up the environment 
 
-The easiest way to run the experiments is the 'marvelsplus' Docker image from [this Orka fork](https://github.com/ikizhvatov/Orka).
-The image incorporates this repository and provides environment with all the necessary tools.
+The easiest way to run the experiments is the `marvelsplus` Docker image from [this Orka fork](https://github.com/ikizhvatov/Orka).
+The image incorporates this repository (as `experiments` folder) and the provides environment with all the necessary tools.
 
 Alternatively, you can set up the environment manually.
 You need to have Julia with [Jlsca](https://github.com/Riscure/Jlsca), and [Daredevil](https://github.com/SideChannelMarvels/Daredevil) on the path.

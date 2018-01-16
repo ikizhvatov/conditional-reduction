@@ -5,6 +5,8 @@
 # - known key ranking
 # - (for jlsca only) number of samples left after conditional reduction
 
+import matplotlib
+matplotlib.use('Agg') # enable working in a headless environment
 import matplotlib.gridspec as gridspec
 import matplotlib.pyplot as plt
 import numpy as np
@@ -15,7 +17,7 @@ def parseDaredevilLog(filename):
 
     keyByteRanks = []
 
-    with open(filename) as f:
+    with open(filename, 'r', encoding='utf-8') as f:
         while True:            
             # find the block of results
             line = f.readline()
@@ -53,7 +55,7 @@ def parseJlscaLog(filename):
     keyByteRanks = []
     numSamplesLeft = []
 
-    with open(filename) as f:
+    with open(filename, 'r', encoding='utf-8') as f:
 
         # parse number of points remaiing afer condred
         while True:
