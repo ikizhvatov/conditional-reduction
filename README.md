@@ -1,7 +1,7 @@
 # Experiments with sample reduction for DCA
 
 This repository contains experimental data and scripts to reproduce experiments with sample reduction techniques for differential computation analysis of whitebox crypto implementations.
-The tracesets were obtained from [Deadpool](https://github.com/SideChannelMarvels/Daredevil): some with the scripts provided there, some using customized Pin plugins (TBD).
+The tracesets were obtained from [Deadpool](https://github.com/SideChannelMarvels/Deadpool): some with the scripts provided there, some using customized Pin plugins (TBD).
 
 ## Setting up the environment 
 
