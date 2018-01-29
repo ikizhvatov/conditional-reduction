@@ -1,12 +1,13 @@
 # Experiments with sample reduction for DCA
 
-This repository contains experimental data and scripts to reproduce experiments with sample reduction techniques for differential computation analysis of whitebox crypto implementations.
+This is a repository with experimental data and scripts for https://eprint.iacr.org/2018/095, to reproduce experiments with sample reduction techniques for differential computation analysis of whitebox crypto implementations.
+
 The tracesets were obtained from [Deadpool](https://github.com/SideChannelMarvels/Deadpool): some with the scripts provided there, some using customized Pin plugins (TBD).
 
 ## Setting up the environment 
 
 The easiest way to run the experiments is the `marvelsplus` Docker image from [this Orka fork](https://github.com/ikizhvatov/Orka).
-The image incorporates this repository (as `experiments` folder) and provides the environment with all the necessary tools.
+The image incorporates this repository (as `conditional-reduction` folder) and provides the environment with all the necessary tools.
 
 Alternatively, you can set up the environment manually.
 You need to have Julia with [Jlsca](https://github.com/Riscure/Jlsca), and [Daredevil](https://github.com/SideChannelMarvels/Daredevil) on the path.
