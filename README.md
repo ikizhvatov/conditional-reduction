@@ -6,7 +6,7 @@ The tracesets were obtained from [Deadpool](https://github.com/SideChannelMarvel
 
 ## Setting up the environment 
 
-The easiest way to run the experiments is the `marvelsplus` Docker image from [this Orka fork](https://github.com/ikizhvatov/Orka).
+The easiest way to run the experiments is the `marvelsplus` Docker image from [Orka](https://github.com/SideChannelMarvels/Orka).
 The image incorporates this repository (as `conditional-reduction` folder) and provides the environment with all the necessary tools.
 
 Alternatively, you can set up the environment manually.
