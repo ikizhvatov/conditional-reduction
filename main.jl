@@ -5,15 +5,14 @@ using Jlsca.Aes
 
 import Jlsca.Sca.leak
 
-type Klemsa <: Leakage
-  multiplier::UInt8
-end
-
-leak(this::Klemsa, data::UInt8) = gf2dot(data, this.multiplier)
-
-# Uses the leakage models defined by Jakub Klemsa in his MSc thesis (see
-# docs/Jakub_Klemsa---Diploma_Thesis.pdf) to attack Dual AES implementations
+# Leakage models defined by Jakub Klemsa in his MSc thesis (see
+# docs/Jakub_Klemsa---Diploma_Thesis.pdf) to attack Dual AES # implementations
 # (see docs/dual aes.pdf)
+mutable struct Klemsa <: Leakage
+  y::UInt8
+end
+leak(a::Klemsa, x::UInt8) = gf2dot(x,a.y)
+
 function gf2dot(x::UInt8, y::UInt8)
   ret::UInt8 = 0
 
@@ -29,19 +28,38 @@ end
 
 function gofaster()
   if length(ARGS) < 1
-    @printf("no input trace\n")
+      print("Usage:\n")
+      print("julia main.jl <filename> [CONDRED|INCCPA] [KLEMSA|INVMUL|VANILLA|DESSBOX] [maxtraces] [maxcolspost]\n")
     return
   end
 
   filename = ARGS[1]
   analmode::AnalysisMode = CONDRED
-  if length(ARGS) > 1 
-    analmode = eval(parse(ARGS[2]))
+  if length(ARGS) > 1
+    a = ARGS[2]
+    if a == "CONDRED"
+      analmode = CONDRED
+    elseif a == "INCCPA"
+      analmode = INCCPA
+    else
+      error("wrong analysis mode")
+    end
   end
 
   attackmode::AttackMode = KLEMSA
   if length(ARGS) > 2 
-    attackmode = eval(parse(ARGS[3]))
+    a = ARGS[3]
+    if a == "KLEMSA"
+      attackmode = KLEMSA
+    elseif a == "INVMUL"
+      attackmode = INVMUL
+    elseif a == "VANILLA"
+      attackmode = VANILLA
+    elseif a == "DESBOX"
+      attackmode = DESBOX
+    else
+      error("wrong attack mode")
+    end
   end
 
   analysis::Analysis = CPA()
@@ -51,15 +69,15 @@ function gofaster()
 
   maxNumberOfTraces = 200
   if length(ARGS) > 3
-    maxNumberOfTraces = parse(ARGS[4])
+    maxNumberOfTraces = parse(Int,ARGS[4])
   end
 
   maxColsPost = 5000
   if length(ARGS) > 4
-    maxColsPost = parse(ARGS[5])
+    maxColsPost = parse(Int,ARGS[5])
   end
 
-  if contains(filename, "wyseur") || contains(filename, "sstic")
+  if occursin("wyseur",filename) || occursin("sstic",filename)
     params = getParameters(filename, BACKWARD)
     if attackmode == DESSBOX
       params.attack = DesSboxAttack()
@@ -73,7 +91,7 @@ function gofaster()
     # condredstats = @sprintf("%s.%s.red.csv", filename, string(params.targetType))
 
   else
-    if(contains(filename, "plaid"))
+    if(occursin("plaid",filename))
       params = getParameters(filename, BACKWARD)
       # params.mode = INVCIPHER
       # params.direction = BACKWARD
@@ -114,12 +132,12 @@ function gofaster()
   params.maxCols = 20000000
   params.maxColsPost = maxColsPost
 
-  toBitsEfficient = true
-  trs = InspectorTrace(filename, toBitsEfficient)
-  addSamplePass(trs, tobits)
+  trs = InspectorTrace(filename)
+  addSamplePass(trs, BitPass())
 
   if analmode == CONDRED
-    setPostProcessor(trs, CondReduce())
+    DCRonce = true
+    setPostProcessor(trs, CondReduce(DCRonce))
 
     numberOfTraces = min(maxNumberOfTraces, length(trs))
 
@@ -131,13 +149,12 @@ function gofaster()
       end
       mask = toMask(state)
 
-      @printf("Reduced to %d bits per row\n", countnz(mask))
+      print("Reduced to $(count(mask)) bits per row\n")
 
-      toBitsEfficient = true
-      trs = InspectorTrace(filename, toBitsEfficient)
-      addSamplePass(trs, tobits)
+      trs = InspectorTrace(filename)
+      addSamplePass(trs, BitPass())
 
-      addSamplePass(trs, x -> x[$mask])
+      addSamplePass(trs, x -> x[mask])
 
       setPostProcessor(trs, IncrementalCorrelation())
 
